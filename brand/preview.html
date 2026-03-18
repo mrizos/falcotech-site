@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: Inter, sans-serif; background: #f0f0f0; padding: 40px; display: flex; flex-direction: column; gap: 40px; align-items: center; }
+    .card { background: #fff; border-radius: 20px; padding: 48px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); text-align: center; width: 100%; max-width: 800px; }
+    h2 { margin-bottom: 8px; font-size: 12px; text-transform: uppercase; letter-spacing: 3px; color: #bbb; font-weight: 600; }
+    .desc { font-size: 13px; color: #999; margin-bottom: 32px; }
+    .row { display: flex; gap: 48px; align-items: end; justify-content: center; flex-wrap: wrap; }
+    .size-label { font-size: 11px; color: #bbb; margin-top: 8px; }
+    .lockup { display:flex; align-items:center; gap:12px; justify-content: center; }
+    .lockup-text { font-size: 28px; font-weight: 800; letter-spacing: -0.5px; color: #111; }
+    .lockup-text span { font-weight: 500; }
+    .winner { border: 2px solid #2563eb; }
+    .winner-badge { background: #2563eb; color: #fff; font-size: 11px; font-weight: 700; padding: 3px 12px; border-radius: 20px; letter-spacing: 1px; margin-bottom: 20px; display: inline-block; }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- OPTION A: Falcon head outline with circuit traces — inspired by reference -->
+  <div class="card">
+    <h2>Option A — Circuit Falcon</h2>
+    <p class="desc">Falcon head profile with integrated circuit traces. Tech meets raptor.</p>
+    <div class="row">
+      <div>
+        <svg width="64" height="64" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Falcon head outline -->
+          <path d="M75 15C70 10 60 12 55 18C50 24 45 28 38 30L25 35L20 42L28 40L32 48C36 52 42 58 48 60L55 55C60 50 65 42 68 35L72 28C78 22 80 18 75 15Z" stroke="#18181b" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Beak -->
+          <path d="M25 35L15 45L22 42L20 42" stroke="#18181b" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Eye -->
+          <circle cx="62" cy="24" r="3" fill="#18181b"/>
+          <circle cx="62" cy="24" r="1.2" fill="#fff"/>
+          <!-- Circuit traces -->
+          <path d="M55 30L45 40L40 55" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+          <path d="M60 35L55 45L48 48" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+          <path d="M65 30L62 42L58 52" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+          <!-- Circuit nodes -->
+          <circle cx="55" cy="30" r="2" fill="#2563eb"/>
+          <circle cx="45" cy="40" r="2" fill="#2563eb"/>
+          <circle cx="40" cy="55" r="2" fill="#2563eb"/>
+          <circle cx="55" cy="45" r="2" fill="#2563eb"/>
+          <circle cx="62" cy="42" r="2" fill="#2563eb"/>
+        </svg>
+        <div class="size-label">64px</div>
+      </div>
+      <div>
+        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M75 15C70 10 60 12 55 18C50 24 45 28 38 30L25 35L20 42L28 40L32 48C36 52 42 58 48 60L55 55C60 50 65 42 68 35L72 28C78 22 80 18 75 15Z" stroke="#18181b" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M25 35L15 45L22 42L20 42" stroke="#18181b" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="62" cy="24" r="3" fill="#18181b"/>
+          <circle cx="62" cy="24" r="1.2" fill="#fff"/>
+          <path d="M55 30L45 40L40 55" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+          <path d="M60 35L55 45L48 48" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+          <path d="M65 30L62 42L58 52" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="55" cy="30" r="2" fill="#2563eb"/>
+          <circle cx="45" cy="40" r="2" fill="#2563eb"/>
+          <circle cx="40" cy="55" r="2" fill="#2563eb"/>
+          <circle cx="55" cy="45" r="2" fill="#2563eb"/>
+          <circle cx="62" cy="42" r="2" fill="#2563eb"/>
+        </svg>
+        <div class="size-label">100px</div>
+      </div>
+    </div>
+    <div style="margin-top:32px">
+      <div class="lockup">
+        <svg width="36" height="36" viewBox="0 0 100 100" fill="none">
+          <path d="M75 15C70 10 60 12 55 18C50 24 45 28 38 30L25 35L20 42L28 40L32 48C36 52 42 58 48 60L55 55C60 50 65 42 68 35L72 28C78 22 80 18 75 15Z" stroke="#18181b" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M25 35L15 45L22 42" stroke="#18181b" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <circle cx="62" cy="24" r="4" fill="#18181b"/>
+          <path d="M55 30L45 42L40 55" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+          <path d="M65 30L60 44L56 52" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="55" cy="30" r="3" fill="#2563eb"/>
+          <circle cx="45" cy="42" r="3" fill="#2563eb"/>
+        </svg>
+        <div class="lockup-text"><span style="color:#18181b;font-weight:800">falco</span><span style="font-weight:500;color:#71717a">tech</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- OPTION B: Clean solid falcon silhouette — sharp, recognizable -->
+  <div class="card">
+    <h2>Option B — Sharp Silhouette</h2>
+    <p class="desc">Bold filled falcon in profile. Hooked beak, sharp wing. Works at any size.</p>
+    <div class="row">
+      <div>
+        <svg width="64" height="64" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Head and body -->
+          <path d="M78 18C74 12 66 10 60 14C56 17 52 22 48 28L42 32L30 34L18 40L12 48L22 44L26 52L34 46L30 62L38 54L44 64L46 52L56 48L62 42L66 34C72 26 76 22 78 18Z" fill="#18181b"/>
+          <!-- Beak hook -->
+          <path d="M30 34L18 40L12 48L16 44L22 44L30 38Z" fill="#18181b"/>
+          <!-- Eye -->
+          <circle cx="62" cy="22" r="3.5" fill="#fff"/>
+          <circle cx="63" cy="22" r="1.8" fill="#18181b"/>
+          <!-- Wing detail line -->
+          <path d="M50 32L58 38" stroke="#fff" stroke-width="1.5" opacity="0.3" stroke-linecap="round"/>
+        </svg>
+        <div class="size-label">64px</div>
+      </div>
+      <div>
+        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M78 18C74 12 66 10 60 14C56 17 52 22 48 28L42 32L30 34L18 40L12 48L22 44L26 52L34 46L30 62L38 54L44 64L46 52L56 48L62 42L66 34C72 26 76 22 78 18Z" fill="#18181b"/>
+          <path d="M30 34L18 40L12 48L16 44L22 44L30 38Z" fill="#18181b"/>
+          <circle cx="62" cy="22" r="3.5" fill="#fff"/>
+          <circle cx="63" cy="22" r="1.8" fill="#18181b"/>
+          <path d="M50 32L58 38" stroke="#fff" stroke-width="1.5" opacity="0.3" stroke-linecap="round"/>
+        </svg>
+        <div class="size-label">100px</div>
+      </div>
+    </div>
+    <div style="margin-top:32px">
+      <div class="lockup">
+        <svg width="36" height="36" viewBox="0 0 100 100" fill="none">
+          <path d="M78 18C74 12 66 10 60 14C56 17 52 22 48 28L42 32L30 34L18 40L12 48L22 44L26 52L34 46L30 62L38 54L44 64L46 52L56 48L62 42L66 34C72 26 76 22 78 18Z" fill="#18181b"/>
+          <path d="M30 34L18 40L12 48L16 44L22 44L30 38Z" fill="#18181b"/>
+          <circle cx="62" cy="22" r="3.5" fill="#fff"/>
+          <circle cx="63" cy="22" r="1.8" fill="#18181b"/>
+        </svg>
+        <div class="lockup-text"><span style="color:#18181b;font-weight:800">falco</span><span style="font-weight:500;color:#71717a">tech</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- OPTION C: Outline falcon head — clean strokes, minimal -->
+  <div class="card">
+    <h2>Option C — Clean Outline</h2>
+    <p class="desc">Minimalist outline falcon. Single weight stroke. Elegant and modern.</p>
+    <div class="row">
+      <div>
+        <svg width="64" height="64" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Head profile -->
+          <path d="M80 20C76 14 68 12 62 16C57 20 52 26 48 30L40 34L28 36" stroke="#18181b" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Hooked beak -->
+          <path d="M28 36L16 44L14 50L20 46" stroke="#18181b" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Chin back to body -->
+          <path d="M20 46L28 44L34 50L40 46L36 60L44 52" stroke="#18181b" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Tail feathers -->
+          <path d="M44 52L48 66" stroke="#18181b" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+          <path d="M44 52L52 62" stroke="#18181b" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+          <!-- Wing line -->
+          <path d="M48 30L56 40L60 36L68 30" stroke="#18181b" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Eye -->
+          <circle cx="65" cy="22" r="3.5" fill="#18181b"/>
+          <circle cx="65" cy="22" r="1.5" fill="#fff"/>
+        </svg>
+        <div class="size-label">64px</div>
+      </div>
+      <div>
+        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M80 20C76 14 68 12 62 16C57 20 52 26 48 30L40 34L28 36" stroke="#18181b" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M28 36L16 44L14 50L20 46" stroke="#18181b" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M20 46L28 44L34 50L40 46L36 60L44 52" stroke="#18181b" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M44 52L48 66" stroke="#18181b" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+          <path d="M44 52L52 62" stroke="#18181b" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+          <path d="M48 30L56 40L60 36L68 30" stroke="#18181b" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="65" cy="22" r="3.5" fill="#18181b"/>
+          <circle cx="65" cy="22" r="1.5" fill="#fff"/>
+        </svg>
+        <div class="size-label">100px</div>
+      </div>
+    </div>
+    <div style="margin-top:32px">
+      <div class="lockup">
+        <svg width="36" height="36" viewBox="0 0 100 100" fill="none">
+          <path d="M80 20C76 14 68 12 62 16C57 20 52 26 48 30L40 34L28 36" stroke="#18181b" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M28 36L16 44L14 50L20 46" stroke="#18181b" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M20 46L28 44L34 50L40 46L36 60L44 52" stroke="#18181b" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M44 52L48 66" stroke="#18181b" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <path d="M44 52L52 62" stroke="#18181b" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <path d="M48 30L56 40L60 36L68 30" stroke="#18181b" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="65" cy="22" r="4.5" fill="#18181b"/>
+        </svg>
+        <div class="lockup-text"><span style="color:#18181b;font-weight:800">falco</span><span style="font-weight:500;color:#71717a">tech</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- OPTION D: Falcon with circuit wing — hybrid filled + circuit -->
+  <div class="card">
+    <h2>Option D — Falcon + Circuit Wing</h2>
+    <p class="desc">Solid falcon head with circuit-board wing extending out. Best of both worlds.</p>
+    <div class="row">
+      <div>
+        <svg width="64" height="64" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Solid falcon head -->
+          <path d="M72 16C68 10 60 12 56 18C52 24 48 28 42 32L32 34L20 40L14 48L22 44L28 50L34 44C38 44 42 46 44 48L48 44L52 40L58 36L64 30C70 24 74 20 72 16Z" fill="#18181b"/>
+          <!-- Beak -->
+          <path d="M32 34L20 40L14 48L18 44L24 44L32 38Z" fill="#18181b"/>
+          <!-- Eye -->
+          <circle cx="60" cy="22" r="3" fill="#fff"/>
+          <circle cx="61" cy="22" r="1.5" fill="#18181b"/>
+          <!-- Circuit wing traces -->
+          <path d="M52 40L60 50L70 48" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M56 36L65 42L78 40" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M58 32L70 36L84 34" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Circuit nodes -->
+          <circle cx="60" cy="50" r="2.5" fill="#2563eb"/>
+          <circle cx="70" cy="48" r="2.5" fill="#2563eb"/>
+          <circle cx="65" cy="42" r="2.5" fill="#2563eb"/>
+          <circle cx="78" cy="40" r="2.5" fill="#2563eb"/>
+          <circle cx="70" cy="36" r="2.5" fill="#2563eb"/>
+          <circle cx="84" cy="34" r="2.5" fill="#2563eb"/>
+          <!-- Tail circuit -->
+          <path d="M44 48L40 62L44 72" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M48 44L50 58L54 66" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="40" cy="62" r="2.5" fill="#2563eb"/>
+          <circle cx="44" cy="72" r="2.5" fill="#2563eb"/>
+          <circle cx="50" cy="58" r="2.5" fill="#2563eb"/>
+          <circle cx="54" cy="66" r="2.5" fill="#2563eb"/>
+        </svg>
+        <div class="size-label">64px</div>
+      </div>
+      <div>
+        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M72 16C68 10 60 12 56 18C52 24 48 28 42 32L32 34L20 40L14 48L22 44L28 50L34 44C38 44 42 46 44 48L48 44L52 40L58 36L64 30C70 24 74 20 72 16Z" fill="#18181b"/>
+          <path d="M32 34L20 40L14 48L18 44L24 44L32 38Z" fill="#18181b"/>
+          <circle cx="60" cy="22" r="3" fill="#fff"/>
+          <circle cx="61" cy="22" r="1.5" fill="#18181b"/>
+          <path d="M52 40L60 50L70 48" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M56 36L65 42L78 40" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M58 32L70 36L84 34" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="60" cy="50" r="2.5" fill="#2563eb"/>
+          <circle cx="70" cy="48" r="2.5" fill="#2563eb"/>
+          <circle cx="65" cy="42" r="2.5" fill="#2563eb"/>
+          <circle cx="78" cy="40" r="2.5" fill="#2563eb"/>
+          <circle cx="70" cy="36" r="2.5" fill="#2563eb"/>
+          <circle cx="84" cy="34" r="2.5" fill="#2563eb"/>
+          <path d="M44 48L40 62L44 72" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M48 44L50 58L54 66" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="40" cy="62" r="2.5" fill="#2563eb"/>
+          <circle cx="44" cy="72" r="2.5" fill="#2563eb"/>
+          <circle cx="50" cy="58" r="2.5" fill="#2563eb"/>
+          <circle cx="54" cy="66" r="2.5" fill="#2563eb"/>
+        </svg>
+        <div class="size-label">100px</div>
+      </div>
+    </div>
+    <div style="margin-top:32px">
+      <div class="lockup">
+        <svg width="40" height="40" viewBox="0 0 100 100" fill="none">
+          <path d="M72 16C68 10 60 12 56 18C52 24 48 28 42 32L32 34L20 40L14 48L22 44L28 50L34 44C38 44 42 46 44 48L48 44L52 40L58 36L64 30C70 24 74 20 72 16Z" fill="#18181b"/>
+          <path d="M32 34L20 40L14 48L18 44L24 44L32 38Z" fill="#18181b"/>
+          <circle cx="60" cy="22" r="3" fill="#fff"/>
+          <path d="M52 40L60 50L70 48" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+          <path d="M56 36L65 42L78 40" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+          <path d="M58 32L70 36L84 34" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="70" cy="48" r="3" fill="#2563eb"/>
+          <circle cx="78" cy="40" r="3" fill="#2563eb"/>
+          <circle cx="84" cy="34" r="3" fill="#2563eb"/>
+        </svg>
+        <div class="lockup-text"><span style="color:#18181b;font-weight:800">falco</span><span style="font-weight:500;color:#71717a">tech</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CURRENT for comparison -->
+  <div class="card" style="border: 2px dashed #ddd;">
+    <h2>Current Logo (Reference)</h2>
+    <p class="desc">What's on the site now. Blob-ish, not recognizable as a falcon.</p>
+    <div class="row">
+      <div>
+        <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+          <path d="M48 8 C48 8 42 6 36 10 L18 28 L8 32 L18 32 L14 44 L28 36 L36 42 L38 34 L44 30 C52 24 54 16 48 8Z" fill="#111"/>
+          <circle cx="40" cy="16" r="2.5" fill="#fff"/>
+        </svg>
+        <div class="size-label">Current 64px</div>
+      </div>
+      <div>
+        <svg width="100" height="100" viewBox="0 0 64 64" fill="none">
+          <path d="M48 8 C48 8 42 6 36 10 L18 28 L8 32 L18 32 L14 44 L28 36 L36 42 L38 34 L44 30 C52 24 54 16 48 8Z" fill="#111"/>
+          <circle cx="40" cy="16" r="2.5" fill="#fff"/>
+        </svg>
+        <div class="size-label">Current 100px</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ALL ON DARK -->
+  <div class="card" style="background:#18181b;">
+    <h2 style="color:#555;">All Options — On Dark Background</h2>
+    <div class="row" style="gap: 40px; margin-top: 24px;">
+      <div>
+        <svg width="64" height="64" viewBox="0 0 100 100" fill="none">
+          <path d="M75 15C70 10 60 12 55 18C50 24 45 28 38 30L25 35L20 42L28 40L32 48C36 52 42 58 48 60L55 55C60 50 65 42 68 35L72 28C78 22 80 18 75 15Z" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M25 35L15 45L22 42" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <circle cx="62" cy="24" r="3" fill="#fff"/>
+          <circle cx="62" cy="24" r="1.2" fill="#18181b"/>
+          <path d="M55 30L45 40L40 55" stroke="#60a5fa" stroke-width="2" stroke-linecap="round"/>
+          <path d="M65 30L62 42L58 52" stroke="#60a5fa" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="55" cy="30" r="2" fill="#60a5fa"/>
+          <circle cx="45" cy="40" r="2" fill="#60a5fa"/>
+          <circle cx="62" cy="42" r="2" fill="#60a5fa"/>
+        </svg>
+        <div class="size-label" style="color:#555">A</div>
+      </div>
+      <div>
+        <svg width="64" height="64" viewBox="0 0 100 100" fill="none">
+          <path d="M78 18C74 12 66 10 60 14C56 17 52 22 48 28L42 32L30 34L18 40L12 48L22 44L26 52L34 46L30 62L38 54L44 64L46 52L56 48L62 42L66 34C72 26 76 22 78 18Z" fill="#fff"/>
+          <path d="M30 34L18 40L12 48L16 44L22 44L30 38Z" fill="#fff"/>
+          <circle cx="62" cy="22" r="3.5" fill="#18181b"/>
+          <circle cx="63" cy="22" r="1.8" fill="#fff"/>
+        </svg>
+        <div class="size-label" style="color:#555">B</div>
+      </div>
+      <div>
+        <svg width="64" height="64" viewBox="0 0 100 100" fill="none">
+          <path d="M80 20C76 14 68 12 62 16C57 20 52 26 48 30L40 34L28 36" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M28 36L16 44L14 50L20 46" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M20 46L28 44L34 50L40 46L36 60L44 52" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M44 52L48 66" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+          <path d="M44 52L52 62" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+          <path d="M48 30L56 40L60 36L68 30" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="65" cy="22" r="3.5" fill="#fff"/>
+          <circle cx="65" cy="22" r="1.5" fill="#18181b"/>
+        </svg>
+        <div class="size-label" style="color:#555">C</div>
+      </div>
+      <div>
+        <svg width="64" height="64" viewBox="0 0 100 100" fill="none">
+          <path d="M72 16C68 10 60 12 56 18C52 24 48 28 42 32L32 34L20 40L14 48L22 44L28 50L34 44C38 44 42 46 44 48L48 44L52 40L58 36L64 30C70 24 74 20 72 16Z" fill="#fff"/>
+          <path d="M32 34L20 40L14 48L18 44L24 44L32 38Z" fill="#fff"/>
+          <circle cx="60" cy="22" r="3" fill="#18181b"/>
+          <circle cx="61" cy="22" r="1.5" fill="#fff"/>
+          <path d="M52 40L60 50L70 48" stroke="#60a5fa" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M56 36L65 42L78 40" stroke="#60a5fa" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M58 32L70 36L84 34" stroke="#60a5fa" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="70" cy="48" r="2.5" fill="#60a5fa"/>
+          <circle cx="78" cy="40" r="2.5" fill="#60a5fa"/>
+          <circle cx="84" cy="34" r="2.5" fill="#60a5fa"/>
+        </svg>
+        <div class="size-label" style="color:#555">D</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

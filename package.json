@@ -1,0 +1,9 @@
+{
+  "name": "falcotech-speed-to-lead",
+  "version": "1.0.0",
+  "description": "FalcoTech Speed-to-Lead Landing Page",
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve ."
+  }
+}
