@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- Scroll Fade-in ---
   const targets = document.querySelectorAll(
-    '.section, .flow-card, .step-card, .who-card, .why-card, .price-card, .pilot-block, .compare-table, .hero .container, .home-feature-card, .home-about-layout, .home-cta-block'
+    '.section, .flow-card, .step-card, .who-card, .why-card, .price-card, .pilot-block, .compare-table, .hero .container'
   );
   targets.forEach(el => el.classList.add('fade-up'));
 
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   targets.forEach(el => observer.observe(el));
 
-  // --- Form (only on speed-to-lead page) ---
+  // --- Form ---
   const form = document.getElementById('contact-form');
   if (form) {
     form.addEventListener('submit', e => {
