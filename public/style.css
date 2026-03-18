@@ -128,6 +128,14 @@ strong { color: var(--text); }
 }
 .nav-cta:hover { background: #27272a !important; }
 
+.nav-lang {
+  font-size: 12px !important; font-weight: 700 !important;
+  padding: 5px 10px !important; border-radius: 6px;
+  border: 1px solid var(--border) !important;
+  color: var(--text-muted) !important; letter-spacing: 0.5px;
+}
+.nav-lang:hover { border-color: var(--text) !important; color: var(--text) !important; background: transparent !important; }
+
 .nav-mobile-toggle {
   display: none; flex-direction: column; gap: 5px;
   background: none; border: none; cursor: pointer; padding: 4px;
