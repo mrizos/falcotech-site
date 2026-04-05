@@ -64,20 +64,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const btn = form.querySelector('button[type="submit"]');
       const orig = btn.innerText;
-      btn.innerText = 'Στάλθηκε ✓';
-      btn.style.background = '#16a34a';
-      btn.style.borderColor = '#16a34a';
+      btn.innerText = 'Αποστολή...';
+      btn.disabled = true;
 
-      const data = {};
-      new FormData(form).forEach((v, k) => { data[k] = v; });
-      console.log('Form submitted:', data);
+      const formData = new FormData(form);
 
-      setTimeout(() => {
-        form.reset();
+      fetch('https://formspree.io/f/xbdppbkn', {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      })
+      .then(response => {
+        if (response.ok) {
+          btn.innerText = 'Στάλθηκε ✓';
+          btn.style.background = '#16a34a';
+          btn.style.borderColor = '#16a34a';
+          setTimeout(() => {
+            form.reset();
+            btn.innerText = orig;
+            btn.style.background = '';
+            btn.style.borderColor = '';
+            btn.disabled = false;
+          }, 3000);
+        } else {
+          throw new Error('Form submission failed');
+        }
+      })
+      .catch(() => {
         btn.innerText = orig;
-        btn.style.background = '';
-        btn.style.borderColor = '';
-      }, 3000);
+        btn.disabled = false;
+        alert('Κάτι πήγε στραβά. Δοκιμάστε ξανά ή στείλτε email στο info@falcotech.gr');
+      });
     });
   }
 });
